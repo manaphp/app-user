@@ -1,0 +1,17 @@
+<style>
+    .manaphp_copyright {
+        position: fixed;
+        bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .manaphp_copyright a {
+        color: blue;
+    }
+
+</style>
+
+<div class="manaphp_copyright">
+    &copy; {{ $year }} <a href="https://github.com/manaphp">ManaPHP</a>
+</div>

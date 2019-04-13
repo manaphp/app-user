@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="@asset(/static/css/manaphp.css)">
+</head>
+<body>
+<div>
+    {{-- <a href="@action('/admin')">Admin</a> --}}
+    @flash()
+</div>

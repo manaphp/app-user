@@ -1,0 +1,3 @@
+@partial('_Header')
+@content()
+@partial('_Footer')
