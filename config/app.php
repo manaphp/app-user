@@ -13,7 +13,6 @@ return [
         '!httpServer' => ['port' => 9501,
             'worker_num' => 4,
             'max_request' => 1000000,
-            'dispatch_mode' => 1,
             'enable_static_handler' => env('APP_DEBUG', false)],
         'db' => env('DB_URL'),
         'redis' => env('REDIS_URL'),
@@ -21,6 +20,7 @@ return [
     ],
     'services' => [],
     'plugins' => [
+        'tracer',
         //'debugger',
         //'fiddler',
     ]

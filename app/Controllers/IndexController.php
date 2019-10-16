@@ -6,6 +6,11 @@ use ManaPHP\Version;
 
 class IndexController extends Controller
 {
+    public function getAcl()
+    {
+        return ['*' => '*'];
+    }
+
     public function indexAction()
     {
         $this->response->redirect('about');
