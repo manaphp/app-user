@@ -1,24 +1,31 @@
 <?php
 namespace App\Models;
 
+use ManaPHP\Db\Model;
+
 /**
- * Class City
- * @property \App\Models\Country $country
+ * Class App\Models\City
  */
-class City extends \ManaPHP\Db\Model
+class City extends Model
 {
     public $city_id;
     public $city;
     public $country_id;
     public $last_update;
 
-    public static function sample()
+    /**
+     * @return string
+     */
+    public function getTable()
     {
-        return [
-            'city_id' => 1,
-            'city' => 'beijing',
-            'country_id' => 1,
-            'last_update' => '2019-01-02 11:12:13'
-        ];
+        return 'city';
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrimaryKey()
+    {
+        return 'city_id';
     }
 }
