@@ -4,7 +4,7 @@ namespace App;
 
 use App\Controllers\IndexController;
 
-class Router extends \ManaPHP\Router
+class Router extends \ManaPHP\Http\Router
 {
     public function __construct()
     {

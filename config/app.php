@@ -23,7 +23,8 @@ return [
     ],
     'services'   => [],
     'plugins'    => [
-        'tracer',
-        //'debugger',
-    ]
+        'debugger',
+        //'logger',
+    ],
+    'tracers'    => []
 ];
