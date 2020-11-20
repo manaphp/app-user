@@ -2,17 +2,15 @@
 
 namespace App\Commands;
 
-use ManaPHP\Cli\Command;
-
 class TestCommand extends Command
 {
     /**
-     * demo for you
+     * demo how to use command
      *
-     * @param string $name your name
+     * @param string $name
      */
     public function defaultAction($name = 'manaphp')
     {
-        $this->console->debug(['hello %s!', $name]);
+        $this->console->writeLn(['Hello %s!', $name]);
     }
 }
