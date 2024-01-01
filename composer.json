@@ -3,7 +3,7 @@
   "description": "ManaPHP User Application",
   "type": "project",
   "require": {
-    "manaphp/framework": "dev-master"
+    "manaphp/framework": "3.1.*"
   },
   "license": "MIT",
   "authors": [

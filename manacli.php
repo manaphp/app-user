@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
-require __DIR__ . '/vendor/autoload.php';
+declare(strict_types=1);
 
-$app = new App\Application();
-$app->cli();
+require __DIR__ . '/bootstrap.php';
+
+bootstrap('ManaPHP\Cli\ServerInterface');
